@@ -26,5 +26,5 @@ You should confirm from both conditions to make sure that the patch will work
 <details>
 <summary>If the event is something other than 0xFF</summary>
 <br>
-If the second argument in the notify command inside the IANE method is different (e.g. 0xEF) and the third part inside acpi_listen output in Linux returns something simmilar to the second argument in the notify command (e.g. 000000ef) then you need to change the condition at line 42 inside 
+If the second argument in the notify command inside the IANE method is different (e.g. 0xEF) and the third part inside acpi_listen output in Linux returns something simmilar to the second argument in the notify command (e.g. 000000ef) then you need to change the condition at line 42 inside [SSDT-ATKD](https://github.com/l3qua/ASUS-Vivobook-A412FA-Guides/blob/main/FN-Lock-and-FN-keys/FN-Lock-with-Fn-Esc/SSDT-ATKD.dsl#L42) to the correct argument (example for 0xEF: If (Arg0 == 0xEF))
 </details>
