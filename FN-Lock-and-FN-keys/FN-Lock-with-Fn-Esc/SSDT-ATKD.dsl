@@ -18,6 +18,7 @@ DefinitionBlock ("", "SSDT", 2, "A412FA", "X412FAG", 0)
         }
         
         // FN + Lock: Toggle
+        // Reference: ASUS-ZenBook-Duo-14-UX481-Hackintosh (@Qonfused)
         Method (_QD5, 0, Serialized)
         {
             If (_OSI ("Darwin"))
