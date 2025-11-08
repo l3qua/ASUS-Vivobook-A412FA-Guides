@@ -49,10 +49,10 @@ P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 
 		- Count: 1 (Number)
 		- Find: 5F57414B (Data) (Hex)
 		- Replace: 5857414B (Data) (Hex)
-		
+
 <details>
 <summary>Raw plist values copied from ProperTree</summary>
-<br>
+````
 <array>
 	<dict>
 		<key>Base</key>
@@ -149,4 +149,5 @@ P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 
 		<data></data>
 	</dict>
 </array>
+````
 </details>
