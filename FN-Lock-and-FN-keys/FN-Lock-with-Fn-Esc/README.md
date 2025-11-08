@@ -37,23 +37,22 @@ To make sure the our patch does not conflict with the existing functions of the 
 There are 2 values (+1 more if you want FN-Lock to retain its value after sleep) that we want to replace:
 
 P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 Hackintosh](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh) SSDT-ATKD and I could not find a way to combine his existing _QD5 function (for FN Lock) inside our IANE function. This means we have to also replace the _QD5 function inside the system DSDT to XQD5 in order for the function to work. If you know how to combine the _QD5 function to the IANE function, please let me know
-	- [FN Lock] IANE to XANE
-		- Count: 1 (Number)
-		- Find: 49414E45 (Data) (Hex)
-		- Replace: 58414E45 (Data) (Hex)
-	- [FN Lock] _QD5 to XQD5
-		- Count: 1 (Number)
-		- Find: 5F514435 (Data) (Hex)
-		- Replace: 58514435 (Data) (Hex)
-	- [XWAK] _WAK to XWAK (for sleep)
-		- Count: 1 (Number)
-		- Find: 5F57414B (Data) (Hex)
-		- Replace: 5857414B (Data) (Hex)
 
-<details>
-<summary>Raw plist values copied from ProperTree</summary>
+- [FN Lock] IANE to XANE
+	- Count: 1 (Number)
+	- Find: 49414E45 (Data) (Hex)
+	- Replace: 58414E45 (Data) (Hex)
+- [FN Lock] _QD5 to XQD5
+	- Count: 1 (Number)
+	- Find: 5F514435 (Data) (Hex)
+	- Replace: 58514435 (Data) (Hex)
+- [XWAK] _WAK to XWAK (for sleep)
+	- Count: 1 (Number)
+	- Find: 5F57414B (Data) (Hex)
+	- Replace: 5857414B (Data) (Hex)
+
+Raw plist data copied from ProperTree:
 ````
-<array>
 	<dict>
 		<key>Base</key>
 		<string></string>
@@ -84,8 +83,6 @@ P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 
 		<key>TableSignature</key>
 		<data></data>
 	</dict>
-</array>
-<array>
 	<dict>
 		<key>Base</key>
 		<string></string>
@@ -116,8 +113,6 @@ P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 
 		<key>TableSignature</key>
 		<data></data>
 	</dict>
-</array>
-<array>
 	<dict>
 		<key>Base</key>
 		<string></string>
@@ -148,6 +143,5 @@ P/S: The function is actually copied from [Qonfused's ASUS ZenBook Duo 14 UX481 
 		<key>TableSignature</key>
 		<data></data>
 	</dict>
-</array>
 ````
-</details>
+
