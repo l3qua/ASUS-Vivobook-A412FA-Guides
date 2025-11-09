@@ -33,7 +33,8 @@ DefinitionBlock ("", "SSDT", 2, "A412FA", "X412FAG", 0)
             }
             Else { XQD5 () }
         }
-        
+    }
+    
     Scope (\_SB.ATKD)
     {
         Method (IANE, 1, NotSerialized)
