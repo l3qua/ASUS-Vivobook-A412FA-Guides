@@ -1,5 +1,11 @@
 # FN Lock with FN+Esc
 
+**Table of contents**
+- [About](#about)
+- [Requirements and Preparations](#requirements-and-preparations)
+	- [Confirm FN-Lock key uses IANE method](#confirm-fn-lock-key-uses-iane-method)
+- [Add replace values to config.plist](#add-replace-values-to-configplist)
+- [Add SSDTs to EFI](#add-ssdts-to-efi)
 ---
 
 ## About
