@@ -1,6 +1,7 @@
 /*
  * Handles macOS-specific device initialization quirks on wake.
  */
+ 
 DefinitionBlock ("", "SSDT", 2, "A412FA", "XWAK", 0x00000000)
 {
     External (_SB_.PCI0.LPCB.EC0_, DeviceObj)

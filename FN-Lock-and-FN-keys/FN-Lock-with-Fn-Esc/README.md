@@ -28,7 +28,7 @@ You should confirm both conditions to make sure that the patch will work
 <details>
 <summary>If the event is something other than 0xFF</summary>
 <br>
-If the second argument in the notify command inside the IANE method is different (e.g. 0xEF) and the third part inside acpi_listen output in Linux returns something simmilar to the second argument in the notify command (e.g. 000000ef) then you need to change the condition at line 42 inside [SSDT-ATKD](https://github.com/l3qua/ASUS-Vivobook-A412FA-Guides/blob/main/FN-Lock-and-FN-keys/FN-Lock-with-Fn-Esc/SSDT-ATKD.dsl#L42) to the correct argument (example for 0xEF: If (Arg0 == 0xEF))
+If the second argument in the notify command inside the IANE method is different (e.g. 0xEF) and the third part inside acpi_listen output in Linux returns something simmilar to the second argument in the notify command (e.g. 000000ef) then you need to change the condition at line 42 inside SSDT-ATKD to the correct argument (example for 0xEF: If (Arg0 == 0xEF))
 </details>
 
 ## Add replace values to config.plist
@@ -145,3 +145,15 @@ Raw plist data copied from ProperTree:
 	</dict>
 ````
 
+## Add SSDTs to EFI
+After applying all the replacements, we can add the required SSDTs. There are 2 SSDTs in  "FN-Lock-with-Fn-Esc" folder. "SSDT-ATKD" includes the function to make FN Lock work propely, while "SSDT-XWAK" allows the FN-Lock to restore its state after sleep
+
+If your IANE event value that you checked from [the previous step](### Confirm FN-Lock key uses IANE method) is different, you have to change that to your correct value before adding the SSDTs
+
+The SSDTs inside the folder is saved as .dsl and OpenCore only accepts .aml so we have to compile the .dsl file first
+
+First, open the SSDT-ATKD.dsl inside MaciASL then go to File -> Save As, then change the file extension from "" to "". After that, copy the .aml SSDT that you just saved to EFI\OC\ACPI folder then open your config.plist in ProperTree and do an OC Snapshot (File -> OC Snapshot)
+
+If you want FN-Lock to retain its state after sleep, you can also add the SSDT-XWAK with the same procedure as compiling the SSDT-ATKD from the previous step
+
+After all of that, you can restart your system and enjoy!
