@@ -4,7 +4,6 @@ DefinitionBlock ("", "SSDT", 2, "A412FA", "X412FAG", 0)
     External (_SB.ATKD.XANE, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_, DeviceObj)
     External (_SB_.PCI0.LPCB.EC0_.ST9E, MethodObj)
-    External (_SB_.PCI0.LPCB.EC0_.WEBC, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQD5, MethodObj)
     External (_SB.PCI0.LPCB.EC0.KFSK, IntObj)
 
