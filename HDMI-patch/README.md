@@ -14,5 +14,10 @@ After installing macOS on your laptop, the HDMI port may not work, this is becau
 ## Preperation and requirements
 - Working iGPU acceleration
 - Plist editor ([ProperTree](https://github.com/corpnewt/ProperTree) is recommended)
+- [VDADecoderChecker](./VDADecoderChecker)
 - Time and patience
 
+## Check hardware acceleration 
+To have a fully working HDMI port, acceleration is required. To check if you have proper hardware acceleration, run [VDADecoderChecker](./VDADecoderChecker) inside the terminal. If you have working acceleration, the executable should return something like this:
+![Terminal output](./vdadc.png)
+If it returns something else, check for things in [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/drm.html#testing-hardware-acceleration-and-decoding)
