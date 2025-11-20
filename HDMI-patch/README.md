@@ -3,7 +3,7 @@
 ** Table of contents **
 - [About](#about)
 - [Preparations and requirements](#preparation-and-requirements)
-  - [Check hardware acceleration](#check-hardware-acceleration)
+	- [Check hardware acceleration](#check-hardware-acceleration)
 
 ---
 
