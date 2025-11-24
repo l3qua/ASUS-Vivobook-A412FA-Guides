@@ -1,6 +1,6 @@
 # Patch HDMI port
 
-** Table of contents **
+**Table of contents**
 - [About](#about)
 - [Preparations and requirements](#preparation-and-requirements)
 	- [Check hardware acceleration](#check-hardware-acceleration)
