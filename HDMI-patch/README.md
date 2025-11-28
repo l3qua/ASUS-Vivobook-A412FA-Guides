@@ -27,4 +27,4 @@ If it returns something else, check for things in [this guide](https://dortania.
 To apply the sample value to your efi config.plist file, copy the entire contents of the [patch.plist](./patch.plist) which contains the sample value, then open your config.plist, click on the iGPU DeviceProperty (PciRoot(0x0)/Pci(0x0,0x2)) and paste the contents you just pasted from the patch plist, you will see 3 new entries that start with `framebuffer-` inside your iGPU DeviceProperty
 
 
-**Note**: If you have any duplicated values, please remove the older ones (or add a hash (#) before their name
+**Note**: If you have any duplicated values, please remove the older ones (or add a hash (#)) before their name
