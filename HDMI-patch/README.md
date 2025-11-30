@@ -28,3 +28,6 @@ To apply the sample value to your efi config.plist file, copy the entire content
 
 
 **Note**: If you have any duplicated values, please remove the older ones (or add a hash (#)) before their name
+
+
+If this does not work, you may have to patch your busid with [this guide](https://github.com/5T33Z0/OC-Little-Translated/blob/main/Content/11_Graphics/iGPU/Framebuffer_Patching/)
