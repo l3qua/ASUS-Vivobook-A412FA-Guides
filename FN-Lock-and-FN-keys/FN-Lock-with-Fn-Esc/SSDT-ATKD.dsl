@@ -34,6 +34,7 @@ DefinitionBlock ("", "SSDT", 2, "A412FA", "X412FAG", 0)
         }
     }
     
+    // Fix fn-lock (fn + esc)
     Scope (\_SB.ATKD)
     {
         Method (IANE, 1, NotSerialized)
