@@ -6,7 +6,7 @@ Guides for various things I stumbled across when making OpenCore EFI for my ASUS
     - [Brightness keys](/FN-Lock-and-FN-keys/Brightness-keys/)
     - [FN Lock with Fn Esc](/FN-Lock-and-FN-keys/FN-Lock-with-Fn-Esc/)
 - [HDMI patch](/HDMI-patch/)
-- [Native NVRAM fix](/NVRAM-fix/)
+- [NVRAM fix](/NVRAM-fix/)
 
 **Note:** If you have any problem that is not mentioned here, you can ask for help at [r/Hackintosh Paradise Discord server](https://discord.gg/u8V7N5C). **PLEASE MAKE YOUR OWN EFI AND FOLLOW THE RULES WHEN ASKING FOR HELP**
 
